@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthController {
     @GetMapping()
     public String healthCheck() {
+        log.warn("Health Check Triggered");
         return "I am alive";
     }
 }
